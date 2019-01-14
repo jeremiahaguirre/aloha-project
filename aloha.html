@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Aloha Apparel Co.</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="aloha.css" />
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+   
+</head>
+
+<body>
+    <header class="site-header ">
+        <!--div for logo;nav for about,shop,feature,updates;div for shopping cart; hr-->
+        <div class="logo">
+            <img src="images/aloha-logo.svg" alt="image of aloha logo" width="150px" height="160px" />
+        </div>
+        <nav class="navigation-bar">
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#featured">Feature</a></li>
+                <li><a href="#newsletter">Updates</a></li>
+            </ul>
+        </nav>
+        <div class="cart">
+            <img src="images/cart-icon.svg" class="cart" alt="shopping cart" width="55px" height="55" />
+        </div>
+    </header>
+    <section class="banner ">
+        <!--banner image2x-->
+        <div class="banner-text">
+             
+            <p> NEW COLLECTION</p>
+                <h1>
+                   Spring/Summer 2016
+                </h1>
+        </div>
+        
+       
+    </section>
+    <section class="products container">
+        <!--use h2 for hand crafted; ul for products section(possibly div)-->
+        <div class="hand container">
+                <h2>
+                <em>Hand-Crafted</em> <stong>Styles</stong>
+                </h2>
+                <p>
+                Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our<br/>current
+                of products or sign-up for updates below.
+                </p>  
+        </div>
+       
+        <!--use h2 for heading;div for products-->
+        <div class="product-choices">
+            <div class="mens">
+                <span>
+                    <a href="#">MEN'S</a>
+                </span>
+            </div>
+            <div class="trends">
+                <span>
+                    <a href="#">TRENDS</a>
+                </span>
+            </div>
+            <div class="glasses">
+                <span>
+                    <a href="#">GLASSES</a>
+                </span>
+            </div>
+            <div class="sale">
+                <span>
+                    <a href="#">SALE</a>
+                </span>
+                <div class="bags">
+                    <span>
+                        <a href="#">BAGS</a>
+                    </span>
+                </div>
+                <div class="womens">
+                    <span>
+                        <a href="#">WOMEN'S</a>
+                    </span>
+                </div>
+            </div>
+        </div>
+        <div class="carosel container">
+            <h2><em>Most-Loved</em><strong> Products</strong></h2>
+            <div class="dresses">
+                <img src="images/checked-stretch-dress.jpg" />
+                <span>DRESSES</span>
+                <h3>CHECKED STRETCH DRESS</h3>
+                <span>&#36;129.00</span>
+            </div>
+            <div class="bag product-picture">
+                <img src="images/blue-hipster-backpack.jpg" />
+                <span>BAGS</span>
+                <h3>BLUE HIPSTER BACKPACK</h3>
+                <span>&#36;69.00</span>
+            </div>
+            <div class="denim product-picture">
+               <img src="images/demin-overall-shorts.jpg" />
+                <span>DENIM</spand>
+                    <h3>DENIM OVERALL SHORTS</h3>
+                    <span>&#36;89.00</span>
+            </div>
+            <div class="pinkdress product-picture">
+                <img src="images/pink-dotted-dress.jpg" />
+                <span>DRESSES</span>
+                <h3>PINK DOTTED DRESS</h3>
+                <span>&#36;99.00</span>
+            </div>
+        </div>
+    </section>
+    <section class="updates">
+        <!-- us form attribute-->
+        <h2><em>Sign-up for</em> <stong>Updates</stong></h2>
+        <p>
+            Stay uploaded on our latest product releases,
+            be the first to find out about<br>upcoming sales and get free style tips from our blog. Unsubscibe at any time.
+        </p>
+        <form action="subscribe" width="100px" height="200px">
+            <input type="text" placeholder="Your Email" name="email" id="email" />
+            <button type="submit" name="submit" id="submit">Subscibe</button>
+        </form>
+    </section>
+    <footer class="contactinfo-social">
+        <!--div for contact;use ul for social media-->
+        <div class="contact">
+            <p>
+                &copy; 2016 Aloha Apparel Co.<br /> Powered by HTML and CSS.
+                <br /> <br /> 604-604-6040.
+                <a href="mailto:info@alohaapparel.com">info&#64;alohapparel.com</a>
+                <br /> <br />1490 W Broadway<br />Vancouver,BC,Canada
+            </p>
+        </div>
+        <div class="social">
+            <ul class="media">
+                <span class="facebook"><a href="#"><i class="fab fa-facebook-f"></i>&nbsp;Facebook</a></span>
+                <br />
+                <span class="twitter"><a href="#"><i class="fab fa-twitter"></i>Twitter</a></span><br>
+                <span class="instagram"><a href="#"><i class="fab fa-instagram"></i>Instagram</a></span><br>
+                <span class="pinterest"><a href="#"><i class="fab fa-pinterest"></i>Pinterest</a></span><br>
+                <span class="google"><a href="#"><i class="fab fa-google-plus-g"></i>Google+</a></span>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

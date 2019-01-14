@@ -1,0 +1,357 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+@font-face {
+    font-family: 'Playfair Display-Regular';
+    src: url('fonts/PlayfairDisplay-Regular.eot');
+    src: url('fonts/PlayfairDisplay-Regular.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Regular.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Regular.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Regular.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display-Bold';
+    src: url('fonts/PlayfairDisplay-Bold.eot');
+    src: url('fonts/PlayfairDisplay-Bold.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Bold.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Bold.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Bold.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold') format('svg');
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Playfair Display-Italic';
+    src: url('fonts/PlayfairDisplay-Italic.eot');
+    src: url('fonts/PlayfairDisplay-Italic.eot?#iefix') format('embedded-opentype'),
+        url('fonts/PlayfairDisplay-Italic.woff2') format('woff2'),
+        url('fonts/PlayfairDisplay-Italic.woff') format('woff'),
+        url('fonts/PlayfairDisplay-Italic.ttf') format('truetype'),
+        url('fonts/PlayfairDisplay-Italic.svg#PlayfairDisplay-Italic') format('svg');
+    font-weight: normal;
+    font-style: italic;
+}
+
+
+@font-face {
+    font-family: 'Raleway-Light';
+    src: url('fonts/Raleway-Light.eot');
+    src: url('fonts/Raleway-Light.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Light.woff2') format('woff2'),
+        url('fonts/Raleway-Light.woff') format('woff'),
+        url('fonts/Raleway-Light.ttf') format('truetype'),
+        url('fonts/Raleway-Light.svg#Raleway-Light') format('svg');
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Raleway-Medium';
+    src: url('fonts/Raleway-Medium.eot');
+    src: url('fonts/Raleway-Medium.eot?#iefix') format('embedded-opentype'),
+        url('fonts/Raleway-Medium.woff2') format('woff2'),
+        url('fonts/Raleway-Medium.woff') format('woff'),
+        url('fonts/Raleway-Medium.ttf') format('truetype'),
+        url('fonts/Raleway-Medium.svg#Raleway-Medium') format('svg');
+    font-weight: 500;
+    font-style: normal;
+}
+
+body {
+    font-size:16px;
+    color:#2d2d2d;
+    font-family:'Raleway-Light';
+}
+
+h1, h2, h3 {
+    font-family:'Playfair Display-Regular';
+}
+
+.container {
+    max-width:1240px;
+    margin:0 auto;
+    text-align: center;
+}
+
+a {
+    color:#e2574c;
+    text-decoration:none;
+}
+a:hover {
+    color:#b64036;
+}
+
+header {
+    display:flex;
+    align-items:center;
+    text-align:center;
+
+}
+.logo {
+    flex:1 0 25%;
+}
+
+nav {
+    flex:1 0 50%; 
+    flex: row wrap;
+}
+
+.cart{
+    flex:1 0 25%;
+   
+}
+
+.navigation-bar ul li {
+    display: inline-block;
+    padding:10px;
+}
+
+
+.banner {
+    color:white;
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)),url(images/banner-girl.png) center top 50px no-repeat, url(images/flower-bkgd.jpg);
+    background-size:auto, auto 559px,auto;
+    margin: 10px auto;
+    display:flex;
+    align-items: center;
+ }   
+
+
+.banner-text {
+   text-align:center;
+    font-size:32px;
+   width:100%;
+   min-height:400px;
+   margin: auto;
+   max-width: 100%;
+   padding-top: 260px;
+   margin-bottom:-195px;
+}
+
+.banner h1 {
+    font-size:64px;
+   
+}
+
+.banner p {
+    font-size:32;
+}
+
+.products a {
+    color:white;
+    font-family:'Playfair Display-Bold';
+}
+
+.products h2, .products p {
+    text-align:center;
+}
+
+.mens {
+   
+    background: url(images/mens-category.jpg); 
+}
+.trends {
+   
+    background: url(images/trends-category.jpg);
+    
+}
+.glasses{
+    
+    background: url(images/glasses-category.jpg);
+    
+}
+.sale {
+    
+    background: url(images/sale-category.jpg);
+    
+}
+.bags {
+    
+    background: url(images/bags-category.jpg);
+    
+}
+.womens {
+   
+    background: url(images/womens-category.jpg);
+   
+}
+
+.carosel{
+    display:flex;
+    flex: row wrap;
+    text-align: center;
+}
+
+
+.carosel h3 {
+    color:#e2574c;
+}
+.carosel span {
+    color:#969696;
+}
+
+.updates {
+    min-height:244px;
+    color:white;
+    text-align: center;
+    background: url(images/wave-bkgd.jpg) no-repeat;
+    background-position: bottom;
+    margin-bottom:11px;
+    padding-top:54px;
+    
+    
+}
+
+.updates h2 {
+    font-size:35px;
+    margin-bottom: 12px;
+}
+
+.updates p {
+    font-size:16px;
+    line-height:24px;
+    margin:10px 0;
+}
+
+#email {
+    display:block;
+    height:10px;
+    padding:12px 90px;
+    border:none;
+    text-align:left;
+    border-radius: 53px;
+}
+
+#submit {
+    color:white;
+    background-color:#e2574c;
+    padding: 10px;
+    border:none;
+    border-radius:53px;
+    font-weight: bold;
+    transition: height 2s;
+}
+
+#submit:hover{
+  height:100px;
+
+}
+
+
+
+footer {
+    display:flex;
+    font-family: 'Playfair Display-Bold';
+    background-color:#242424;
+    color:white;
+    padding:45px;
+  
+}
+
+footer a {
+    color:white;
+}
+
+footer p {
+    margin-left:5px;
+    
+}
+
+.media {
+    margin-left:800px;
+    padding:10px;
+    width:100px;
+}
+
+.media span a {
+    padding-top:10px;
+    padding-bottom:10px;
+}
+
+.media ul span:link:active {
+    color:white;
+}
+
+@media screen and (max-width:480px){
+    header{
+        display: inline-block;
+    
+    }
+    
+    .logo{
+       align-self: flex-start;
+        flex:row wrap;
+        justify-content: flex-start;
+        flex:0 0 30%;
+        order:1;
+    }   
+    .cart{
+        align-self: flex-end;
+        flex:row wrap;
+        justify-content:flex-end;
+        flex: 0 0 30%;
+        order:2;
+    }   
+    nav{
+       display:inline-block;
+        flex: 0 0 100%;
+        order:3;
+        
+    }
+    .navigation-bar ul {
+        justify-content: flex-start;
+        align-items:flex-start;
+        order:3;
+    }
+}
