@@ -5,3 +5,4 @@ This is a project to showcase HTML and CSS to build a responsive website as part
 -HTML
 -CSS
 -Responsive Web Design
+-Git
