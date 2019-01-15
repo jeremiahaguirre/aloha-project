@@ -198,43 +198,53 @@ nav {
     text-align:center;
 }
 
-.product-choices {
-    margin:0 auto;
-}
+
 
 .mens {
-   
+   text-align:center;
+    display: inline-flex;
     background: url(images/mens-category.jpg); 
+   flex: 50%;
+   margin:10px;
 }
 .trends {
-   
+   text-align:center;
+    display: inline-flex;
     background: url(images/trends-category.jpg);
-    
+   flex:25%;
+   margin:10px;
 }
 .glasses{
-    
+    text-align:center;
+    display: inline-flex;
     background: url(images/glasses-category.jpg);
-    
+    flex:25%;
+    margin:10px;
 }
 .sale {
-    
+    text-align:center;
+    display: inline-flex;
     background: url(images/sale-category.jpg);
-    
+    flex:25%;
+    margin:10px;
 }
 .bags {
-    
+    text-align:center;
+    display: inline-flex;
     background: url(images/bags-category.jpg);
-    
+    flex:25%;
+    margin:10px;
 }
 .womens {
-   
+    text-align:center;
+    display: inline-flex;
     background: url(images/womens-category.jpg);
-   
+    flex:50%;
+    margin:10px;
 }
 
 .carosel{
-    display:flex;
-    flex: row wrap;
+    display:inline;
     text-align: center;
 }
 
@@ -269,7 +279,7 @@ nav {
     margin:10px 0;
 }
 
-#email {
+.email {
     display:block;
     height:10px;
     padding:12px 90px;
@@ -279,7 +289,7 @@ nav {
     margin-left: 544px;
 }
 
-#submit {
+.botton{
     color:white;
     background-color:#e2574c;
     padding: 8px;
