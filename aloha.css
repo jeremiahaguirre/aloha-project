@@ -198,6 +198,11 @@ nav {
 
 /*Product Choices*/
 
+.product-choices {
+    display: flex;
+    flex-wrap:wrap;
+}
+
 .products a {
     color:white;
     font-family:'Playfair Display-Bold';
@@ -208,46 +213,52 @@ nav {
 }
 
 .mens {
+    height:100px;
+    width:200px;
     text-align:center;
-    display: inline-flex;
-    background: url(images/mens-category.jpg); 
-    flex: 50%;
-    margin:10px;
+    background: url(images/mens-category.jpg)center center no-repeat; 
+    flex:1 0 50%;
+    margin:5px;
 }
 .trends {
+    height:100px;
+    width:100px;
     text-align:center;
-    display: inline-flex;
-    background: url(images/trends-category.jpg);
-    flex:25%;
-    margin:10px;
+    background: url(images/trends-category.jpg)center center no-repeat;
+    flex:1 0 25%;
+    margin:5px;
 }
 .glasses {
+    height:100px;
+    width:100px;
     text-align:center;
-    display: inline-flex;
-    background: url(images/glasses-category.jpg);
-    flex:25%;
-    margin:10px;
+    background: url(images/glasses-category.jpg)center center no-repeat;
+    flex:1 0 25%;
+    margin:5px;
 }
 .sale {
+    height:100px;
+    width:100px;
     text-align:center;
-    display: inline-flex;
-    background: url(images/sale-category.jpg);
-    flex:25%;
-    margin:10px;
+    background: url(images/sale-category.jpg)center center no-repeat;
+    flex:1 0 25%;
+    margin:5px;
 }
 .bags {
+    height:100px;
+    width:100px;
     text-align:center;
-    display: inline-flex;
-    background: url(images/bags-category.jpg);
-    flex:25%;
-    margin:10px;
+    background: url(images/bags-category.jpg)center center no-repeat;
+    flex:1 0 25%;
+    margin:5px;
 }
 .womens {
+    height:100px;
+    width:200px;
     text-align:center;
-    display: inline-flex;
-    background: url(images/womens-category.jpg);
+    background: url(images/womens-category.jpg)center center no-repeat;
     flex:50%;
-    margin:10px;
+    margin:5px;
 }
 
 /*Carosel*/
