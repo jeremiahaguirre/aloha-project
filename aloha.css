@@ -148,7 +148,8 @@ nav {
 }
 
 .cart{
-    flex:1 0 25%;
+    margin:auto;
+    flex:0 0 25%;
    
 }
 
@@ -325,33 +326,16 @@ footer p {
 
 @media screen and (max-width:480px){
     header{
-        display: inline-block;
-    
+        flex-wrap:wrap;
     }
     
-    .logo{
-       align-self: flex-start;
-        flex:row wrap;
-        justify-content: flex-start;
-        flex:0 0 30%;
+    .logo, .cart{
+        flex:0 0 50%;
         order:1;
     }   
-    .cart{
-        align-self: flex-end;
-        flex:row wrap;
-        justify-content:flex-end;
-        flex: 0 0 30%;
-        order:2;
-    }   
     nav{
-       display:inline-block;
         flex: 0 0 100%;
-        order:3;
+        order:2;
         
-    }
-    .navigation-bar ul {
-        justify-content: flex-start;
-        align-items:flex-start;
-        order:3;
     }
 }

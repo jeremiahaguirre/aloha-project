@@ -6,3 +6,6 @@ This is a project to showcase HTML and CSS to build a responsive website as part
 -CSS
 -Responsive Web Design
 -Git
+-Media Quiery
+-Fontawsome
+## 
