@@ -1,3 +1,6 @@
+/*CSS Reset*/
+
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -46,7 +49,7 @@ table {
 	border-collapse: collapse;
 	border-spacing: 0;
 }
-
+/*All the fonts*/
 @font-face {
     font-family: 'Playfair Display-Regular';
     src: url('fonts/PlayfairDisplay-Regular.eot');
@@ -132,6 +135,8 @@ a:hover {
     color:#b64036;
 }
 
+/*Header*/
+
 header {
     display:flex;
     align-items:center;
@@ -142,15 +147,16 @@ header {
     flex:1 0 25%;
 }
 
+.cart {
+    margin:auto;
+    flex:0 0 25%; 
+}
+
+/*Navigation Bar*/
+
 nav {
     flex:1 0 50%; 
     flex: row wrap;
-}
-
-.cart{
-    margin:auto;
-    flex:0 0 25%;
-   
 }
 
 .navigation-bar ul li {
@@ -158,6 +164,7 @@ nav {
     padding:10px;
 }
 
+/*Banner*/
 
 .banner {
     color:white;
@@ -166,18 +173,18 @@ nav {
     margin: 10px auto;
     display:flex;
     align-items: center;
- }   
+}   
 
 
 .banner-text {
-   text-align:center;
+    text-align:center;
     font-size:32px;
-   width:100%;
-   min-height:400px;
-   margin: auto;
-   max-width: 100%;
-   padding-top: 260px;
-   margin-bottom:-195px;
+    width:100%;
+    min-height:400px;
+    margin: auto;
+    max-width: 100%;
+    padding-top: 260px;
+    margin-bottom:-195px;
 }
 
 .banner h1 {
@@ -189,6 +196,8 @@ nav {
     font-size:32;
 }
 
+/*Product Choices*/
+
 .products a {
     color:white;
     font-family:'Playfair Display-Bold';
@@ -198,23 +207,21 @@ nav {
     text-align:center;
 }
 
-
-
 .mens {
-   text-align:center;
+    text-align:center;
     display: inline-flex;
     background: url(images/mens-category.jpg); 
-   flex: 50%;
-   margin:10px;
+    flex: 50%;
+    margin:10px;
 }
 .trends {
-   text-align:center;
+    text-align:center;
     display: inline-flex;
     background: url(images/trends-category.jpg);
-   flex:25%;
-   margin:10px;
+    flex:25%;
+    margin:10px;
 }
-.glasses{
+.glasses {
     text-align:center;
     display: inline-flex;
     background: url(images/glasses-category.jpg);
@@ -243,11 +250,18 @@ nav {
     margin:10px;
 }
 
-.carosel{
-    display:inline;
-    text-align: center;
+/*Carosel*/
+
+.caroselitem {
+    justify-content:center;
+    max-width:100%;
+    max-height:100%;
+
 }
 
+.caroselitem, span, h3 {
+    text-align: center;
+}
 
 .carosel h3 {
     color:#e2574c;
@@ -255,6 +269,8 @@ nav {
 .carosel span {
     color:#969696;
 }
+
+/*Newsletter*/
 
 .updates {
     min-height:244px;
@@ -264,8 +280,6 @@ nav {
     background-position: bottom;
     margin-bottom:11px;
     padding-top:54px;
-    
-    
 }
 
 .updates h2 {
@@ -289,7 +303,7 @@ nav {
     margin-left: 544px;
 }
 
-.botton{
+.botton {
     color:white;
     background-color:#e2574c;
     padding: 8px;
@@ -299,13 +313,14 @@ nav {
     margin-left: 230px;
 }
 
+/*Footer with contact info and social media*/
+
 footer {
     display:flex;
     font-family: 'Playfair Display-Bold';
     background-color:#242424;
     color:white;
     padding:45px;
-  
 }
 
 footer a {
@@ -313,8 +328,7 @@ footer a {
 }
 
 footer p {
-    margin-left:5px;
-    
+    margin-left:5px;  
 }
 
 .media {
@@ -336,33 +350,32 @@ footer p {
 header {
     flex-wrap:none;
     justify-content: initial;
-}
+    }
 }
 
-@media screen and (max-width:480px){
-    body {
-        max-width:450px;
-        margin:auto;
+@media screen and (max-width:480px) {
+body {
+    max-width:450px;
+    margin:auto;
     }
 
 h1, h2, h3, p {
-   align-self:center;
-}
+    align-self:center;
+    }
 
-    header{
-        flex-wrap:wrap;
+    header {
+    flex-wrap:wrap;
     }
     
-.logo, .cart{
-        flex:0 0 50%;
-        order:1;
+.logo, .cart {
+    flex:0 0 50%;
+    order:1;
     }   
-nav{
+nav {
     border-top:1px solid;
     border-color: #969696;    
     flex: 0 0 100%;
-        order:2;
-        
+    order:2;  
     }
     footer {
        flex:row wrap;
