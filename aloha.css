@@ -127,8 +127,9 @@ h1, h2, h3 {
 
 .container {
     max-width:1240px;
+    min-width:400px;
     margin:0 auto;
-    text-align: center;
+    
 }
 
 a {
@@ -211,64 +212,73 @@ nav {
 .product-choices {
     display: flex;
     flex-wrap:wrap;
+    
 }
 
 .products a {
     color:white;
     font-family:'Playfair Display-Bold';
+    text-align: center;
+    background-position: 50%;
+    
 }
 
-.products h2, .products p {
-    text-align:center;
-}
+
 
 .mens {
-    height:100px;
-    width:200px;
+    height:145px;
+    max-width:100%;
     text-align:center;
-    background: url(images/mens-category.jpg)center center no-repeat; 
+    position: relative;
+    background: url(images/mens-category.jpg)center center no-repeat;
     flex:1 0 50%;
-    margin:5px;
+    border: 4px solid white;
 }
+
 .trends {
-    height:100px;
-    width:100px;
+    height:145px;
+    max-width:100%;
+    position: relative;
     text-align:center;
     background: url(images/trends-category.jpg)center center no-repeat;
     flex:1 0 25%;
-    margin:5px;
+    border: 4px solid white;
 }
 .glasses {
-    height:100px;
-    width:100px;
+    height:145px;
+    max-width:100%;
+    position: relative;
     text-align:center;
     background: url(images/glasses-category.jpg)center center no-repeat;
     flex:1 0 25%;
-    margin:5px;
+    border: 4px solid white;
 }
 .sale {
-    height:100px;
-    width:100px;
+    height:145px;
+    max-width:100%;
+    position: relative;
     text-align:center;
     background: url(images/sale-category.jpg)center center no-repeat;
     flex:1 0 25%;
-    margin:5px;
+    border: 4px solid white;
 }
 .bags {
-    height:100px;
-    width:100px;
+    height:145px;
+    max-width:100%;
+    position: relative;
     text-align:center;
     background: url(images/bags-category.jpg)center center no-repeat;
     flex:1 0 25%;
-    margin:5px;
+    border: 4px solid white;
 }
 .womens {
-    height:100px;
-    width:200px;
+    height:145px;
+    max-width:100%;
+    position: relative;
     text-align:center;
     background: url(images/womens-category.jpg)center center no-repeat;
     flex:50%;
-    margin:5px;
+    border: 4px solid white;
 }
 
 /*Carosel*/
@@ -346,9 +356,9 @@ form {
 footer {
     display:flex;
     font-family: 'Playfair Display-Bold';
-    background-color:#242424;
+    background:#242424;
     color:white;
-    padding:45px;
+    /*padding:45px;*/
 }
 
 footer a {
@@ -356,13 +366,17 @@ footer a {
 }
 
 footer p {
-    margin-left:5px;  
+    display: flex;
+    /*flex: column none;
+    margin-left:5px;*/ 
+    flex:1 0 70%; 
+    text-align:center;
 }
 
 .media {
-    margin-left:800px;
-    padding:10px;
-    width:100px;
+    display:flex;
+    flex:0 0 30%;
+    
 }
 
 .media span a {
@@ -370,17 +384,34 @@ footer p {
     padding-bottom:10px;
 }
 
-.media ul span:link:active {
+.media ul span:active {
     color:white;
 }
-/*
-@media screen and (max-width:600px) {
-header {
-    flex-wrap:none;
-    justify-content: initial;
-    }
-}
 
+@media screen and (min-width:600px) {
+    header {
+    flex: 1 0 100%;
+    
+    }
+    .logo {
+    flex:1 0 25%;
+    order:1;
+    }
+
+    .nav {
+        flex:1 0 50%;
+        order:2;
+        
+    }
+
+    .cart {
+        margin:auto;
+        flex:1 0 25%;
+        order:3;
+    }
+
+}
+/*
 @media screen and (max-width:480px) {
 body {
     max-width:450px;
