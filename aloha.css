@@ -346,8 +346,8 @@ form {
     border:none;
     border-radius:53px;
     font-weight: bold;
-    position: absolute;
-    bottom:2px;
+    position: relative;
+    bottom:32px;
     z-index:1;
 }
 
@@ -363,6 +363,7 @@ footer {
 
 footer a {
     color:white;
+    
 }
 
 footer p {
