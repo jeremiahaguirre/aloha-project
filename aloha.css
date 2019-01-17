@@ -292,6 +292,10 @@ nav {
   font-size: 32;
 }
 
+.hand {
+    text-align: center;
+}
+
 /*Product Choices*/
 
 .product-choices {
@@ -494,10 +498,9 @@ footer p {
     order: 3;
   }
 }
-/*
-@media screen and (max-width:480px) {
+
+@media screen and (min-width:600px) {
 body {
-    max-width:450px;
     margin:auto;
     }
 
@@ -507,20 +510,21 @@ h1, h2, h3, p {
 
     header {
     flex-wrap:wrap;
+
     }
     
 .logo, .cart {
-    flex:0 0 50%;
-    order:1;
+    flex:0 0 25%;
+    
     }   
 nav {
-    border-top:1px solid;
-    border-color: #969696;    
-    flex: 0 0 100%;
-    order:2;  
+    border:none;
+        
+    flex: 0 0 50%;
+ 
     }
     footer {
        flex:row wrap;
     }
 }
-*/
+
