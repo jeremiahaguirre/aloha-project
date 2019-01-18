@@ -303,17 +303,15 @@ nav {
   font-size: 32;
 }
 
-
 .hand {
   font-size: 40px;
   text-align: center;
-  padding:92px;
-}
- 
-.hand p {
-  font-size:20px;
+  padding: 92px;
 }
 
+.hand p {
+  font-size: 20px;
+}
 
 /*Product Choices*/
 
@@ -338,8 +336,8 @@ nav {
   background-size: cover;
   flex: 1 0 50%;
   border: 4px solid white;
-  line-height:250px;
-  font-size:1.8em;
+  line-height: 250px;
+  font-size: 1.8em;
 }
 
 .trends {
@@ -351,8 +349,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
-  line-height:250px;
-  font-size:1.8em;
+  line-height: 250px;
+  font-size: 1.8em;
 }
 .glasses {
   height: 250px;
@@ -363,8 +361,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
-  line-height:250px;
-  font-size:1.8em;
+  line-height: 250px;
+  font-size: 1.8em;
 }
 .sale {
   height: 250px;
@@ -375,8 +373,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
-  line-height:250px;
-  font-size:1.8em;
+  line-height: 250px;
+  font-size: 1.8em;
 }
 .bags {
   height: 250px;
@@ -387,8 +385,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
-  line-height:250px;
-  font-size:1.8em;
+  line-height: 250px;
+  font-size: 1.8em;
 }
 .womens {
   height: 250px;
@@ -399,8 +397,8 @@ nav {
   background-size: cover;
   flex: 1 0 50%;
   border: 4px solid white;
-  line-height:250px;
-  font-size:1.8em;
+  line-height: 250px;
+  font-size: 1.8em;
 }
 
 .caroselcontainer h2 {
@@ -555,7 +553,6 @@ footer p {
   }
 
   .media a {
-    
   }
 
   form {
