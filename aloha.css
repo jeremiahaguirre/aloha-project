@@ -253,6 +253,7 @@ nav {
   border-color: #969696;
   flex: 0 0 100%;
   order: 2;
+  text-transform: uppercase;
 }
 
 .navigation-bar ul li {
@@ -293,7 +294,7 @@ nav {
 }
 
 .hand {
-    text-align: center;
+  text-align: center;
 }
 
 /*Product Choices*/
@@ -362,7 +363,7 @@ nav {
   position: relative;
   text-align: center;
   background: url(images/womens-category.jpg) center center no-repeat;
-  flex: 50%;
+  flex: 1 0 50%;
   border: 4px solid white;
 }
 
@@ -422,9 +423,8 @@ form {
   width: 304px;
   border: none;
   text-align: left;
-  padding-left:23px;
+  padding-left: 23px;
   border-radius: 53px;
-  
 }
 
 .botton {
@@ -478,7 +478,7 @@ footer p {
   color: white;
 }
 
-@media screen and (min-width: 600px) {
+@media screen and (min-width: 1240px) {
   header {
     flex: 1 0 100%;
   }
@@ -497,34 +497,68 @@ footer p {
     flex: 1 0 25%;
     order: 3;
   }
+
+  footer {
+    flex-flow: row;
+  }
+
+  .contact {
+    flex: 1 0 50%;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .social {
+    flex: 1 0 50%;
+    text-align: center;
+  }
+  .media span {
+    display: flex;
+  }
+
+  .media a {
+    display: inline;
+  }
+
+  form {
+    position: relative;
+    left: 37%;
+  }
+
+  .botton {
+    position: relative;
+    right: 337px;
+    bottom: 32px;
+    z-index: 1;
+  }
 }
 
-@media screen and (min-width:600px) {
-body {
-    margin:auto;
-    }
+@media screen and (min-width: 600px) {
+  body {
+    margin: auto;
+  }
 
-h1, h2, h3, p {
-    align-self:center;
-    }
+  h1,
+  h2,
+  h3,
+  p {
+    align-self: center;
+  }
 
-    header {
-    flex-wrap:wrap;
+  header {
+    flex-wrap: wrap;
+  }
 
-    }
-    
-.logo, .cart {
-    flex:0 0 25%;
-    
-    }   
-nav {
-    border:none;
-        
+  .logo,
+  .cart {
+    flex: 0 0 25%;
+  }
+  nav {
+    border: none;
+
     flex: 0 0 50%;
- 
-    }
-    footer {
-       flex:row wrap;
-    }
+  }
+  footer {
+    flex: row wrap;
+  }
 }
-
