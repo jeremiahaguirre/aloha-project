@@ -305,11 +305,14 @@ nav {
 
 
 .hand {
-  font-size: 30px;
+  font-size: 40px;
   text-align: center;
-  padding:49px;
+  padding:92px;
 }
-
+ 
+.hand p {
+  font-size:20px;
+}
 
 
 /*Product Choices*/
@@ -335,6 +338,8 @@ nav {
   background-size: cover;
   flex: 1 0 50%;
   border: 4px solid white;
+  line-height:250px;
+  font-size:1.8em;
 }
 
 .trends {
@@ -346,6 +351,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
+  line-height:250px;
+  font-size:1.8em;
 }
 .glasses {
   height: 250px;
@@ -356,6 +363,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
+  line-height:250px;
+  font-size:1.8em;
 }
 .sale {
   height: 250px;
@@ -366,6 +375,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
+  line-height:250px;
+  font-size:1.8em;
 }
 .bags {
   height: 250px;
@@ -376,6 +387,8 @@ nav {
   background-size: cover;
   flex: 1 0 25%;
   border: 4px solid white;
+  line-height:250px;
+  font-size:1.8em;
 }
 .womens {
   height: 250px;
@@ -386,6 +399,8 @@ nav {
   background-size: cover;
   flex: 1 0 50%;
   border: 4px solid white;
+  line-height:250px;
+  font-size:1.8em;
 }
 
 .caroselcontainer h2 {
@@ -489,7 +504,7 @@ footer p {
   padding-top: 30px;
 }
 
-.media span {
+.media li {
   display: none;
 }
 
@@ -497,7 +512,7 @@ footer p {
   padding: 10px;
 }
 
-.media ul span:active {
+.media ul li:active {
   color: white;
 }
 
@@ -535,12 +550,12 @@ footer p {
     flex: 1 0 50%;
     text-align: center;
   }
-  .media span {
-    display: flex;
+  .media li {
+    display: inline-block;
   }
 
   .media a {
-    display: inline;
+    
   }
 
   form {
@@ -550,8 +565,8 @@ footer p {
 
   .botton {
     position: relative;
-    right: 337px;
-    bottom: 32px;
+    right: 397px;
+    bottom: 31px;
     z-index: 1;
   }
 }
