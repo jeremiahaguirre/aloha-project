@@ -1,7 +1,21 @@
-$("form").on("click", "button", function() {
-  alert("You have Subscribed");
-  $(".botton").val("");
+$(".botton").on("click", function() {
+  function validateEmail(sEmail) {
+    var re = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
+    console.log(re.test(sEmail));
+    if (re.test(sEmail)) {
+      return true;
+    } else {
+      return false;
+    }
+  }
+  const sEmail = $(".email").valueOf();
+  if (validateEmail(sEmail)) {
+    alert("You have subscribed");
+  } else {
+    alert("Invalid Email");
+  }
 });
+
 /* Smooth scrolling
 @source https://css-tricks.com/smooth-scrolling-accessibility/
 
