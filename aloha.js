@@ -1,21 +1,24 @@
-$(".botton").on("click", function() {
-  function validateEmail(sEmail) {
-    var re = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
-    console.log(re.test(sEmail));
-    if (re.test(sEmail)) {
-      return true;
-    } else {
-      return false;
-    }
-  }
-  const sEmail = $(".email").valueOf();
-  if (validateEmail(sEmail)) {
-    alert("You have subscribed");
-  } else {
-    alert("Invalid Email");
-  }
-});
+function validateEmail(email) {
+  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  return re.test(email);
+}
 
+function validate() {
+  var $result = $(".botton");
+  var email = $(".email").val();
+  $result.text("");
+
+  if (validateEmail(email)) {
+    $result.text(email + " is valid");
+    $result.css("color", "black");
+  } else {
+    $result.text(email + " is not valid :(");
+    $result.css("color", "black");
+  }
+  return false;
+}
+
+$(".botton").bind("click", validate);
 /* Smooth scrolling
 @source https://css-tricks.com/smooth-scrolling-accessibility/
 
