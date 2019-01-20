@@ -456,7 +456,7 @@ form {
 .email {
   display: block;
   height: 31px;
-  width: 304px;
+  width: 293px;
   border: none;
   text-align: left;
   padding-left: 23px;
@@ -541,43 +541,44 @@ footer p {
 
   .botton {
     position: relative;
-    right: 27%;
+    right: 28%;
     bottom: 31px;
     z-index: 1;
   }
 
-
   footer {
-  flex-flow: row;
-}
+    flex-flow: row;
+  }
 
   footer p {
-  text-align: left;
-}
+    text-align: left;
+  }
 
   .contact {
-  flex: 1 0 50%;
-  justify-content: center;
-  text-align: left;
-}
+    flex: 1 0 50%;
+    justify-content: center;
+    text-align: left;
+  }
 
   .social {
-  flex: 1 0 75%;
-  text-align: center;
-}
+    flex: 1 0 75%;
+    text-align: center;
+  }
 
   .media {
-  display: inline-block;
-}
+    display: inline-block;
+    text-align:justify;
+    
+  }
 
   .media li {
-  display: inline-block;
-}
+    display: inline-block;
+    padding:5px;
+  }
 
- .media a i{
-  width:30px;
-}
-
+  .media a i {
+    width: 30px;
+  }
 }
 @media screen and (min-width: 600px) {
   body {
@@ -607,26 +608,26 @@ footer p {
   footer {
     flex-flow: row;
   }
-  
+
   footer p {
     text-align: left;
   }
-  
+
   .contact {
     flex: 1 0 50%;
     justify-content: center;
     text-align: left;
   }
-  
+
   .social {
     flex: 1 0 75%;
     text-align: center;
   }
-  
+
   .media {
     display: inline-block;
   }
-  
+
   .media li {
     display: inline-block;
   }

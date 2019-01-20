@@ -1,3 +1,8 @@
+/* Validation of Email
+@source https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
+
+*/
+
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
@@ -6,47 +11,19 @@ function validateEmail(email) {
 function validate() {
   var $result = $(".botton");
   var email = $(".email").val();
-  
 
   if (validateEmail(email)) {
     alert("You have subcribed");
-    
   } else {
-   alert( "Email is not valid ");
+    alert("Email is not valid ");
   }
   return false;
 }
 
 $(".botton").bind("click", validate);
+
 /* Smooth scrolling
 @source https://css-tricks.com/smooth-scrolling-accessibility/
-
-*/
-
-$(function() {
-  $('a[href*="#"]:not([href="#"])').click(function() {
-    if (
-      location.pathname.replace(/^\//, "") ==
-        this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
-    ) {
-      var target = $(this.hash);
-      target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
-      if (target.length) {
-        $("html, body").animate(
-          {
-            scrollTop: target.offset().top
-          },
-          1600
-        );
-        return false;
-      }
-    }
-  });
-});
-
-/* Smooth scrolling
-@souce https://css-tricks.com/smooth-scrolling-accessibility/
 
 */
 
@@ -80,4 +57,20 @@ $(".carosel").flickity({
   contain: true,
   autoPlay: true,
   prevNextButtons: false
+});
+
+//Cart function
+$(document).ready(function() {
+  $("#carticon").simpleCart();
+});
+
+$(document).ready(function() {
+  $("#carticon").simpleCart({
+    addtoCartClass: ".sc-add-to-cart",
+    cartProductListClass: ".cart-products-list",
+    totalCartCountClass: ".total-cart-count",
+    totalCartCostClass: ".total-cart-cost",
+    showcartID: "#show-cart",
+    itemCountClass: ".item-count"
+  });
 });

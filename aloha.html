@@ -9,6 +9,8 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
     <link rel="stylesheet" href="./flickity.min.css" media="screen">
+    <link rel="stylesheet" href="bootstrap.min.css">
+<link rel="stylesheet" href="fontawesome.min.css">
 </head>
 
 <body>
@@ -26,7 +28,7 @@
             </ul>
         </nav>
         <div class="cart">
-            <img src="images/cart-icon.svg" class="cart" alt="shopping cart" width="55px" height="55px" />
+            <img src="images/cart-icon.svg" class="cart" id="carticon" alt="shopping cart" width="55px" height="55px" />
         </div>
     </header>
     <section class="banner ">
@@ -96,48 +98,57 @@
                 <span>DRESSES</span>
                 <h3>Stretch Knit Dress</h3>
                 <span>&#36;169.00</span>
+                <button class="sc-add-to-cart" data-name="Product" data-price="50" type="submit">ADD To Cart</button>
+
             </div>
             <div class="dresses caroselitem">
                 <img src="images/checked-stretch-dress.jpg" />
                 <span>DRESSES</span>
                 <h3>CHECKED STRETCH DRESS</h3>
                 <span>&#36;129.00</span>
+                <button class="sc-add-to-cart" data-name="CHECKED STRETCH DRESS" data-price="50" type="submit">ADD To Cart</button>
             </div>
             <div class="bag  caroselitem">
                 <img src="images/blue-hipster-backpack.jpg" />
                 <span>BAGS</span>
                 <h3>BLUE HIPSTER BACKPACK</h3>
                 <span>&#36;69.00</span>
+                <button class="sc-add-to-cart" data-name="BLUE HIPSTER BACKPACK" data-price="50" type="submit">ADD To Cart</button>
             </div>
             <div class="denim caroselitem">
                <img src="images/demin-overall-shorts.jpg" />
                 <span>DENIM</spand>
                     <h3>DENIM OVERALL SHORTS</h3>
                     <span>&#36;89.00</span>
+                    <button class="sc-add-to-cart" data-name="DENIM OVERALL SHORTS" data-price="50" type="submit">ADD To Cart</button>
             </div>
             <div class="pinkdress caroselitem">
                 <img src="images/pink-dotted-dress.jpg" />
                 <span>DRESSES</span>
                 <h3>PINK DOTTED DRESS</h3>
                 <span>&#36;99.00</span>
+                <button class="sc-add-to-cart" data-name="PINK DOTTED DRESS" data-price="50" type="submit">ADD To Cart</button>
             </div>
             <div class="blueshirt caroselitem">
                 <img src="images/cotton-blue-shirt.jpg" />
                 <span>Shirts</span>
-                <h3>Cotton Blue Shirt</h3>
+                <h3>COTTON BLUE SHIRT</h3>
                 <span>&#36;89.00</span>
+                <button class="sc-add-to-cart" data-name="COTTON BLUE SHIRT" data-price="50" type="submit">ADD To Cart</button>
             </div>
             <div class="yellowshirt caroselitem">
                 <img src="images/cotton-yellow-tshirt.jpg" />
                 <span>Shirts</span>
-                <h3>Cotten Yellow Tshirt</h3>
+                <h3>COTTEN YELLOW TSHIRT</h3>
                 <span>&#36;39.00</span>
+                <button class="sc-add-to-cart" data-name="COTTEN YELLOW TSHIRT" data-price="50" type="submit">ADD To Cart</button>
             </div>
             <div class="bluedress caroselitem">
                 <img src="images/blue-silk-dress.jpg" />
                 <span>DRESSES</span>
-                <h3>Blue Silk Dress</h3>
+                <h3>BLUE SILK DRESS</h3>
                 <span>&#36;119.00</span>
+                <button class="sc-add-to-cart" data-name="BLUE SILK DRESS" data-price="50" type="submit">ADD To Cart</button>
             </div>
         </div>
     </section>
@@ -165,16 +176,17 @@
         </div>
         <div class="social">
             <ul class="media">
-                <a href="#"><i class="fab fa-facebook-f icon"></i><li class="facebook">&nbsp;Facebook</li></a><br />
-                <a href="#"><i class="fab fa-twitter icon"></i><li class="twitter">Twitter</li></Twitter></a><br>
-                <a href="#"><i class="fab fa-instagram icon"></i><li class="instagram">Instagram</li></a><br>
-                <a href="#"><i class="fab fa-pinterest icon"></i><li class="pinterest">Pinterest</li></a><br>
-                <a href="#"><i class="fab fa-google-plus-g icon"></i><li class="google">Google+</li></a>
+                <a href="https://www.facebook.com/"><i class="fab fa-facebook-f icon"></i><li class="facebook">&nbsp;Facebook</li></a><br />
+                <a href="https://twitter.com/"><i class="fab fa-twitter icon"></i><li class="twitter">Twitter</li></Twitter></a><br>
+                <a href="https://www.instagram.com/"><i class="fab fa-instagram icon"></i><li class="instagram">Instagram</li></a><br>
+                <a href="https://www.pinterest.ca/"><i class="fab fa-pinterest icon"></i><li class="pinterest">Pinterest</li></a><br>
+                <a href="https://plus.google.com/+Gmail"><i class="fab fa-google-plus-g icon"></i><li class="google">Google+</li></a>
             </ul>
         </div>
     </footer>
- <script src="./jquery-3.3.1.min.js"></script>   
- <script src="./flickity.pkgd.min.js"></script>
+ <script src="./jquery-3.3.1.min.js"></script> 
+ <script src="/jQuery.SimpleCart.js" ></script>  
+ <script src="./jQuery.SimpleCart.js"></script>
  <script src="./aloha.js"></script>
 
 </body>
