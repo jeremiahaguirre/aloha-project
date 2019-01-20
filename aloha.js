@@ -6,14 +6,13 @@ function validateEmail(email) {
 function validate() {
   var $result = $(".botton");
   var email = $(".email").val();
-  $result.text("");
+  
 
   if (validateEmail(email)) {
-    $result.text(email + " is valid");
-    $result.css("color", "black");
+    alert("You have subcribed");
+    
   } else {
-    $result.text(email + " is not valid :(");
-    $result.css("color", "black");
+   alert( "Email is not valid ");
   }
   return false;
 }

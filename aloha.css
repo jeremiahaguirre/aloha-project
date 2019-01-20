@@ -534,27 +534,6 @@ footer p {
     order: 3;
   }
 
-  footer {
-    flex-flow: row;
-  }
-
-  .contact {
-    flex: 1 0 50%;
-    justify-content: center;
-    text-align: left;
-  }
-
-  .social {
-    flex: 1 0 50%;
-    text-align: center;
-  }
-  .media li {
-    display: inline-block;
-  }
-
-  .media a {
-  }
-
   form {
     position: relative;
     left: 37%;
@@ -562,12 +541,44 @@ footer p {
 
   .botton {
     position: relative;
-    right: 397px;
+    right: 27%;
     bottom: 31px;
     z-index: 1;
   }
+
+
+  footer {
+  flex-flow: row;
 }
 
+  footer p {
+  text-align: left;
+}
+
+  .contact {
+  flex: 1 0 50%;
+  justify-content: center;
+  text-align: left;
+}
+
+  .social {
+  flex: 1 0 75%;
+  text-align: center;
+}
+
+  .media {
+  display: inline-block;
+}
+
+  .media li {
+  display: inline-block;
+}
+
+ .media a i{
+  width:30px;
+}
+
+}
 @media screen and (min-width: 600px) {
   body {
     margin: auto;
@@ -594,6 +605,29 @@ footer p {
     flex: 0 0 50%;
   }
   footer {
-    flex: row wrap;
+    flex-flow: row;
+  }
+  
+  footer p {
+    text-align: left;
+  }
+  
+  .contact {
+    flex: 1 0 50%;
+    justify-content: center;
+    text-align: left;
+  }
+  
+  .social {
+    flex: 1 0 75%;
+    text-align: center;
+  }
+  
+  .media {
+    display: inline-block;
+  }
+  
+  .media li {
+    display: inline-block;
   }
 }
