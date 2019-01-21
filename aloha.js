@@ -59,4 +59,5 @@ $(".carosel").flickity({
   prevNextButtons: false,
   imagesLoaded:true,
   percentPosition:false
+  
 });
