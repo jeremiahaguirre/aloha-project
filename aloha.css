@@ -494,6 +494,10 @@ footer p {
   text-align: center;
 }
 
+.address {
+  color:lightgrey;
+}
+
 .media {
   display: flex;
   justify-content: center;
@@ -649,9 +653,16 @@ footer p {
 
   .media {
     display: inline-block;
+    text-align: justify;
   }
 
   .media li {
     display: inline-block;
+    padding: 5px;
   }
+
+  .media a i {
+    width: 30px;
+  }
+
 }
