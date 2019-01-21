@@ -324,84 +324,110 @@ nav {
   color: white;
   font-family: "Playfair Display-Bold";
   text-align: center;
-  background-position: 50%;
+  
 }
 
 .mens {
-  height: 250px;
-  max-width: 100%;
+  
+  overflow: hidden;
+  padding-bottom: 25%;
   text-align: center;
   position: relative;
   background: url(images/mens-category.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: cover, contain;
+  overflow: hidden;
   flex: 1 0 100%;
   border: 4px solid white;
-  line-height: 250px;
   font-size: 1.8em;
+
 }
 
 .trends {
-  height: 250px;
-  max-width: 50%;
+  
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
   background: url(images/trends-category.jpg) center center no-repeat;
-  background-size: cover;
-  flex: 1 0 25%;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 50%;
   border: 4px solid white;
-  line-height: 250px;
   font-size: 1.8em;
 }
 .glasses {
-  height: 250px;
-  max-width: 50%;
+  
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
   background: url(images/glasses-category.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: cover, contain;
+  overflow: hidden;
   flex: 1 0 50%;
   border: 4px solid white;
-  line-height: 250px;
   font-size: 1.8em;
 }
 .sale {
-  height: 250px;
-  max-width: 50%;
+  
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
   background: url(images/sale-category.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: cover, contain;
+  overflow: hidden;
   flex: 1 0 50%;
   border: 4px solid white;
-  line-height: 250px;
   font-size: 1.8em;
 }
 .bags {
-  height: 250px;
-  max-width: 50%;
+  
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
   background: url(images/bags-category.jpg) center center no-repeat;
-  background-size: cover;
-  flex: 1 0 25%;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 50%;
   border: 4px solid white;
-  line-height: 250px;
   font-size: 1.8em;
 }
 .womens {
-  height: 250px;
-  max-width: 100%;
+  overflow: hidden;
+  padding-bottom: 25%;
   position: relative;
   text-align: center;
   background: url(images/womens-category.jpg) center center no-repeat;
-  background-size: cover;
+  background-size: cover, contain;
+  overflow: hidden;
   flex: 1 0 100%;
   border: 4px solid white;
-  line-height: 250px;
   font-size: 1.8em;
 }
 
-.caroselcontainer h2 {
+.box:before {
+  content:"";
+  display: block;
+	padding-top: 25%; 
+}
+
+.box-text {
+  position: relative;
+  text-align: center;
+  top:40px;
+  font-size: 30px;
+}
+
+.box-text2 {
+  position: relative;
+  text-align: center;
+  top:-20px;
+  font-size: 30px;
+}
+
+.carosel-header {
   text-align: center;
   font-size: 37px;
 }
@@ -569,6 +595,7 @@ footer p {
   .mens,
   .womens {
     flex: 1 0 50%;
+    padding-bottom: 10%;
   }
 
   .trends,
@@ -576,6 +603,11 @@ footer p {
   .sale,
   .bags {
     flex: 1 0 25%;
+    padding-bottom: 10%;
+  }
+
+  .box-text {
+    top:68px;
   }
 
   footer {
@@ -648,6 +680,7 @@ footer p {
   .mens,
   .womens {
     flex: 1 0 50%;
+    padding-bottom: 10%;
   }
 
   .trends,
@@ -655,6 +688,7 @@ footer p {
   .sale,
   .bags {
     flex: 1 0 25%;
+    padding-bottom: 10%;
   }
 
   footer {

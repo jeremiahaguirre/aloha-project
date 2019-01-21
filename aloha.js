@@ -56,5 +56,7 @@ $(".carosel").flickity({
   cellAlign: "left",
   contain: true,
   autoPlay: true,
-  prevNextButtons: false
+  prevNextButtons: false,
+  imagesLoaded:true,
+  percentPosition:false
 });
