@@ -296,15 +296,15 @@ nav {
 }
 
 .banner h1 {
-  font-size: 4rem;
+  font-size: 3rem;
 }
 
 .banner p {
-  font-size: 32;
+  font-size: 25px;
 }
 
 .hand {
-  font-size: 40px;
+  font-size: 33px;
   text-align: center;
   padding: 92px;
 }
@@ -430,7 +430,8 @@ h3 {
   min-height: 298px;
   color: white;
   text-align: center;
-  background: url(images/wave-bkgd.jpg) no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(images/wave-bkgd.jpg) no-repeat;
   background-position: bottom;
   margin-bottom: 11px;
   padding-top: 54px;
@@ -456,7 +457,7 @@ form {
 .email {
   display: block;
   height: 31px;
-  width: 293px;
+  width: 323px;
   border: none;
   text-align: left;
   padding-left: 23px;
@@ -495,7 +496,7 @@ footer p {
 }
 
 .address {
-  color:lightgrey;
+  color: lightgrey;
 }
 
 .media {
@@ -536,6 +537,18 @@ footer p {
     margin: auto;
     flex: 1 0 25%;
     order: 3;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+  }
+
+  .banner p {
+    font-size: 32;
+  }
+
+  .hand {
+    font-size: 40px;
   }
 
   .mens,
@@ -615,9 +628,18 @@ footer p {
   .cart {
     flex: 0 0 25%;
   }
+
+  .cart {
+    order: 2;
+  }
+
   nav {
     border: none;
     flex: 0 0 50%;
+  }
+
+  .hand {
+    font-size: 40px;
   }
 
   .mens,
@@ -664,5 +686,4 @@ footer p {
   .media a i {
     width: 30px;
   }
-
 }
