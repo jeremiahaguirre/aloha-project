@@ -334,7 +334,7 @@ nav {
   position: relative;
   background: url(images/mens-category.jpg) center center no-repeat;
   background-size: cover;
-  flex: 1 0 50%;
+  flex: 1 0 100%;
   border: 4px solid white;
   line-height: 250px;
   font-size: 1.8em;
@@ -359,7 +359,7 @@ nav {
   text-align: center;
   background: url(images/glasses-category.jpg) center center no-repeat;
   background-size: cover;
-  flex: 1 0 25%;
+  flex: 1 0 50%;
   border: 4px solid white;
   line-height: 250px;
   font-size: 1.8em;
@@ -371,7 +371,7 @@ nav {
   text-align: center;
   background: url(images/sale-category.jpg) center center no-repeat;
   background-size: cover;
-  flex: 1 0 25%;
+  flex: 1 0 50%;
   border: 4px solid white;
   line-height: 250px;
   font-size: 1.8em;
@@ -395,7 +395,7 @@ nav {
   text-align: center;
   background: url(images/womens-category.jpg) center center no-repeat;
   background-size: cover;
-  flex: 1 0 50%;
+  flex: 1 0 100%;
   border: 4px solid white;
   line-height: 250px;
   font-size: 1.8em;
@@ -534,6 +534,18 @@ footer p {
     order: 3;
   }
 
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+  }
+
+  .trends,
+  .glasses,
+  .sale,
+  .bags {
+    flex: 1 0 25%;
+  }
+
   form {
     position: relative;
     left: 37%;
@@ -567,13 +579,12 @@ footer p {
 
   .media {
     display: inline-block;
-    text-align:justify;
-    
+    text-align: justify;
   }
 
   .media li {
     display: inline-block;
-    padding:5px;
+    padding: 5px;
   }
 
   .media a i {
@@ -602,9 +613,21 @@ footer p {
   }
   nav {
     border: none;
-
     flex: 0 0 50%;
   }
+
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+  }
+
+  .trends,
+  .glasses,
+  .sale,
+  .bags {
+    flex: 1 0 25%;
+  }
+
   footer {
     flex-flow: row;
   }

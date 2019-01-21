@@ -58,19 +58,3 @@ $(".carosel").flickity({
   autoPlay: true,
   prevNextButtons: false
 });
-
-//Cart function
-$(document).ready(function() {
-  $("#carticon").simpleCart();
-});
-
-$(document).ready(function() {
-  $("#carticon").simpleCart({
-    addtoCartClass: ".sc-add-to-cart",
-    cartProductListClass: ".cart-products-list",
-    totalCartCountClass: ".total-cart-count",
-    totalCartCostClass: ".total-cart-cost",
-    showcartID: "#show-cart",
-    itemCountClass: ".item-count"
-  });
-});
