@@ -448,32 +448,43 @@ h3 {
   margin: 10px 0;
 }
 
-form {
+.input {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 32px;
+  width: 350px;
+  height: 10%;
   margin: auto;
-  position: relative;
-  left: 20%;
+  padding-left: 16px;
+  border: none;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+button:focus,
+button:active {
+  outline: none;
 }
 
 .email {
-  display: block;
-  height: 31px;
-  width: 323px;
+  width: 80%;
+  height: 20px;
+  border-radius: 15px;
+  margin: 2px;
   border: none;
-  text-align: left;
-  padding-left: 23px;
-  border-radius: 53px;
+  padding: 5px;
 }
 
 .botton {
-  color: white;
+  border-radius: 15px;
+  margin: 4px;
+  width: 100px;
   background-color: #e2574c;
-  padding: 8px;
   border: none;
-  border-radius: 23px;
-  font-weight: bold;
-  position: absolute;
-  bottom: 1px;
-  z-index: 1;
 }
 
 /*Footer with contact info and social media*/
@@ -493,6 +504,10 @@ footer a {
 
 footer p {
   text-align: center;
+}
+
+.contact a {
+  text-decoration: underline;
 }
 
 .address {
@@ -561,18 +576,6 @@ footer p {
   .sale,
   .bags {
     flex: 1 0 25%;
-  }
-
-  form {
-    position: relative;
-    left: 37%;
-  }
-
-  .botton {
-    position: relative;
-    right: 28%;
-    bottom: 31px;
-    z-index: 1;
   }
 
   footer {
