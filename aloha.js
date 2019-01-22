@@ -57,7 +57,6 @@ $(".carosel").flickity({
   contain: true,
   autoPlay: true,
   prevNextButtons: false,
-  imagesLoaded:true,
-  percentPosition:false
-  
+  imagesLoaded: true,
+  percentPosition: false
 });
