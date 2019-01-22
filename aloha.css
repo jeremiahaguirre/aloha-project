@@ -324,11 +324,9 @@ nav {
   color: white;
   font-family: "Raleway-Medium";
   text-align: center;
-  
 }
 
 .mens {
-  
   overflow: hidden;
   padding-bottom: 25%;
   text-align: center;
@@ -339,11 +337,9 @@ nav {
   flex: 1 0 100%;
   border: 4px solid white;
   font-size: 1.8em;
-
 }
 
 .trends {
-  
   overflow: hidden;
   padding-bottom: 25%;
   position: relative;
@@ -356,7 +352,6 @@ nav {
   font-size: 1.8em;
 }
 .glasses {
-  
   overflow: hidden;
   padding-bottom: 25%;
   position: relative;
@@ -369,7 +364,6 @@ nav {
   font-size: 1.8em;
 }
 .sale {
-  
   overflow: hidden;
   padding-bottom: 25%;
   position: relative;
@@ -382,7 +376,6 @@ nav {
   font-size: 1.8em;
 }
 .bags {
-  
   overflow: hidden;
   padding-bottom: 25%;
   position: relative;
@@ -408,33 +401,33 @@ nav {
 }
 
 .box:before {
-  content:"";
+  content: "";
   display: block;
-	padding-top: 25%; 
+  padding-top: 25%;
 }
 
 .box-text {
   position: relative;
   text-align: center;
-  top:40px;
+  top: 40px;
   font-size: 30px;
 }
 
 .box-text2 {
   position: relative;
   text-align: center;
-  top:-20px;
+  top: -20px;
   font-size: 30px;
 }
 
 .carosel-header {
-  padding-top:65px;
+  padding-top: 65px;
   text-align: center;
   font-size: 37px;
 }
 
 .carosel {
-  padding-top:40px;
+  padding-top: 40px;
   padding-bottom: 65px;
   margin-bottom: 40px;
 }
@@ -609,7 +602,7 @@ footer p {
   }
 
   .box-text {
-    top:68px;
+    top: 68px;
   }
 
   footer {
