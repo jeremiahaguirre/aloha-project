@@ -1,51 +1,38 @@
 /*All the fonts*/
 @font-face {
   font-family: "Playfair Display-Regular";
-  src: url("fonts/PlayfairDisplay-Regular.eot");
-  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
+  src: url("../fonts/PlayfairDisplay-Regular.eot");
+  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
-    url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
-    url("fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
       format("svg");
   font-weight: normal;
   font-style: normal;
 }
 
 @font-face {
-  font-family: "Playfair Display-Bold";
-  src: url("fonts/PlayfairDisplay-Bold.eot");
-  src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
-    url("fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
-    url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
-    url("fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
-    url("fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
-  font-weight: bold;
-  font-style: normal;
-}
-
-
-@font-face {
   font-family: "Raleway-Light";
-  src: url("fonts/Raleway-Light.eot");
-  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Raleway-Light.woff2") format("woff2"),
-    url("fonts/Raleway-Light.woff") format("woff"),
-    url("fonts/Raleway-Light.ttf") format("truetype"),
-    url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  src: url("../fonts/Raleway-Light.eot");
+  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Light.woff2") format("woff2"),
+    url("../fonts/Raleway-Light.woff") format("woff"),
+    url("../fonts/Raleway-Light.ttf") format("truetype"),
+    url("../fonts/Raleway-Light.svg#Raleway-Light") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway-Medium";
-  src: url("fonts/Raleway-Medium.eot");
-  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
-    url("fonts/Raleway-Medium.woff2") format("woff2"),
-    url("fonts/Raleway-Medium.woff") format("woff"),
-    url("fonts/Raleway-Medium.ttf") format("truetype"),
-    url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  src: url("../fonts/Raleway-Medium.eot");
+  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../fonts/Raleway-Medium.woff2") format("woff2"),
+    url("../fonts/Raleway-Medium.woff") format("woff"),
+    url("../fonts/Raleway-Medium.ttf") format("truetype"),
+    url("../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
 }
@@ -54,6 +41,24 @@ body {
   font-size: 16px;
   color: #2d2d2d;
   font-family: "Raleway-Light";
+}
+
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
 }
 
 em {
@@ -104,11 +109,6 @@ header {
   order: 1;
 }
 
-.logo img {
-  width: 150px;
-  height: 160px;
-}
-
 .cart {
   margin: auto;
   flex: 0 0 50%;
@@ -137,8 +137,8 @@ nav {
 .banner {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(images/banner-girl.png) center top 50px no-repeat,
-    url(images/flower-bkgd.jpg);
+    url(../images/banner-girl.png) center top 50px no-repeat,
+    url(../images/flower-bkgd.jpg);
   background-size: auto, auto 559px, auto;
   margin: 1px auto;
   display: flex;
@@ -175,15 +175,16 @@ nav {
 }
 
 /*Product Choices*/
-.products a {
-  color: white;
-  font-family: "Raleway-Medium";
-  text-align: center;
-}
 
 .product-choices {
   display: flex;
   flex-wrap: wrap;
+}
+
+.products a {
+  color: white;
+  font-family: "Raleway-Medium";
+  text-align: center;
 }
 
 .mens {
@@ -191,7 +192,7 @@ nav {
   padding-bottom: 25%;
   text-align: center;
   position: relative;
-  background: url(images/mens-category.jpg) center center no-repeat;
+  background: url(../images/mens-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 100%;
@@ -204,7 +205,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/trends-category.jpg) center center no-repeat;
+  background: url(../images/trends-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -216,7 +217,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/glasses-category.jpg) center center no-repeat;
+  background: url(../images/glasses-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -228,7 +229,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/sale-category.jpg) center center no-repeat;
+  background: url(../images/sale-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -240,7 +241,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/bags-category.jpg) center center no-repeat;
+  background: url(../images/bags-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -252,7 +253,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(images/womens-category.jpg) center center no-repeat;
+  background: url(../images/womens-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 100%;
@@ -312,7 +313,7 @@ h3 {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url(images/wave-bkgd.jpg) no-repeat;
+    url(../images/wave-bkgd.jpg) no-repeat;
   background-position: bottom;
   margin-bottom: 11px;
   padding-top: 54px;
@@ -327,11 +328,6 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   margin: 10px 0;
-}
-
-form {
-  width: 100px;
-  height: 200px;
 }
 
 .input {
@@ -365,7 +361,7 @@ button:active {
   padding: 5px;
 }
 
-.button {
+.botton {
   border-radius: 15px;
   margin: 4px;
   width: 100px;
@@ -562,7 +558,6 @@ footer p {
     flex: 1 0 50%;
     justify-content: center;
     text-align: left;
-    padding-top: 4%;
   }
 
   .social {
