@@ -1,0 +1,586 @@
+/*All the fonts*/
+@font-face {
+  font-family: "Playfair Display-Regular";
+  src: url("fonts/PlayfairDisplay-Regular.eot");
+  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix")
+      format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+      format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Playfair Display-Bold";
+  src: url("fonts/PlayfairDisplay-Bold.eot");
+  src: url("fonts/PlayfairDisplay-Bold.eot?#iefix") format("embedded-opentype"),
+    url("fonts/PlayfairDisplay-Bold.woff2") format("woff2"),
+    url("fonts/PlayfairDisplay-Bold.woff") format("woff"),
+    url("fonts/PlayfairDisplay-Bold.ttf") format("truetype"),
+    url("fonts/PlayfairDisplay-Bold.svg#PlayfairDisplay-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "Raleway-Light";
+  src: url("fonts/Raleway-Light.eot");
+  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Light.woff2") format("woff2"),
+    url("fonts/Raleway-Light.woff") format("woff"),
+    url("fonts/Raleway-Light.ttf") format("truetype"),
+    url("fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Raleway-Medium";
+  src: url("fonts/Raleway-Medium.eot");
+  src: url("fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("fonts/Raleway-Medium.woff2") format("woff2"),
+    url("fonts/Raleway-Medium.woff") format("woff"),
+    url("fonts/Raleway-Medium.ttf") format("truetype"),
+    url("fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  font-weight: 500;
+  font-style: normal;
+}
+
+body {
+  font-size: 16px;
+  color: #2d2d2d;
+  font-family: "Raleway-Light";
+}
+
+em {
+  font-style: italic;
+}
+
+strong {
+  font-weight: bold;
+}
+
+h1,
+h2,
+h3,
+p {
+  align-self: center;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Playfair Display-Regular";
+}
+
+.container {
+  max-width: 1240px;
+  min-width: 400px;
+  margin: 0 auto;
+}
+
+a {
+  color: #e2574c;
+  text-decoration: none;
+}
+a:hover {
+  color: #b64036;
+}
+
+/*Header*/
+
+header {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+}
+.logo {
+  flex: 0 0 50%;
+  order: 1;
+}
+
+.logo img {
+  width: 150px;
+  height: 160px;
+}
+
+.cart {
+  margin: auto;
+  flex: 0 0 50%;
+  order: 1;
+}
+
+/*Navigation Bar*/
+
+nav {
+  flex: row wrap;
+  border-top: 1px solid;
+  border-color: #969696;
+  flex: 0 0 100%;
+  order: 2;
+  text-transform: uppercase;
+}
+
+.navigation-bar ul li {
+  display: inline-block;
+  font-weight: bold;
+  padding: 10px;
+}
+
+/*Banner*/
+
+.banner {
+  color: white;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url(images/banner-girl.png) center top 50px no-repeat,
+    url(images/flower-bkgd.jpg);
+  background-size: auto, auto 559px, auto;
+  margin: 1px auto;
+  display: flex;
+  align-items: center;
+}
+
+.banner-text {
+  text-align: center;
+  font-size: 2em;
+  width: 100%;
+  min-height: 400px;
+  margin: auto;
+  max-width: 100%;
+  padding-top: 260px;
+  margin-bottom: 14%;
+}
+
+.banner h1 {
+  font-size: 3rem;
+}
+
+.banner p {
+  font-size: 25px;
+}
+
+.hand {
+  font-size: 33px;
+  text-align: center;
+  padding: 92px;
+}
+
+.hand p {
+  font-size: 20px;
+}
+
+/*Product Choices*/
+.products a {
+  color: white;
+  font-family: "Raleway-Medium";
+  text-align: center;
+}
+
+.product-choices {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mens {
+  overflow: hidden;
+  padding-bottom: 25%;
+  text-align: center;
+  position: relative;
+  background: url(images/mens-category.jpg) center center no-repeat;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 100%;
+  border: 4px solid white;
+  font-size: 1.8em;
+}
+
+.trends {
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  background: url(images/trends-category.jpg) center center no-repeat;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 50%;
+  border: 4px solid white;
+  font-size: 1.8em;
+}
+.glasses {
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  background: url(images/glasses-category.jpg) center center no-repeat;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 50%;
+  border: 4px solid white;
+  font-size: 1.8em;
+}
+.sale {
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  background: url(images/sale-category.jpg) center center no-repeat;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 50%;
+  border: 4px solid white;
+  font-size: 1.8em;
+}
+.bags {
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  background: url(images/bags-category.jpg) center center no-repeat;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 50%;
+  border: 4px solid white;
+  font-size: 1.8em;
+}
+.womens {
+  overflow: hidden;
+  padding-bottom: 25%;
+  position: relative;
+  text-align: center;
+  background: url(images/womens-category.jpg) center center no-repeat;
+  background-size: cover, contain;
+  overflow: hidden;
+  flex: 1 0 100%;
+  border: 4px solid white;
+  font-size: 1.8em;
+}
+
+.box:before {
+  content: "";
+  display: block;
+  padding-top: 25%;
+}
+
+.box-text {
+  position: relative;
+  text-align: center;
+  top: 40px;
+  font-size: 30px;
+}
+
+.box-text2 {
+  position: relative;
+  text-align: center;
+  top: -20px;
+  font-size: 30px;
+}
+
+.carosel-header {
+  padding-top: 65px;
+  text-align: center;
+  font-size: 37px;
+}
+
+.carosel {
+  padding-top: 40px;
+  padding-bottom: 65px;
+  margin-bottom: 40px;
+}
+
+.caroselitem span,
+h3 {
+  display: block;
+  text-align: center;
+}
+
+.carosel h3 {
+  color: #e2574c;
+}
+.carosel span {
+  color: #969696;
+}
+
+/*Newsletter*/
+
+.updates {
+  min-height: 298px;
+  color: white;
+  text-align: center;
+  background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
+    url(images/wave-bkgd.jpg) no-repeat;
+  background-position: bottom;
+  margin-bottom: 11px;
+  padding-top: 54px;
+}
+
+.updates h2 {
+  font-size: 35px;
+  margin-bottom: 12px;
+}
+
+.updates p {
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+}
+
+form {
+  width: 100px;
+  height: 200px;
+}
+
+.input {
+  display: flex;
+  flex-direction: row;
+  background-color: white;
+  border-radius: 32px;
+  width: 350px;
+  height: 10%;
+  margin: auto;
+  padding-left: 16px;
+  border: none;
+}
+
+input:focus,
+input:active {
+  outline: none;
+}
+
+button:focus,
+button:active {
+  outline: none;
+}
+
+.email {
+  width: 80%;
+  height: 20px;
+  border-radius: 15px;
+  margin: 2px;
+  border: none;
+  padding: 5px;
+}
+
+.button {
+  border-radius: 15px;
+  margin: 4px;
+  width: 100px;
+  background-color: #e2574c;
+  border: none;
+}
+
+/*Footer with contact info and social media*/
+
+footer {
+  display: flex;
+  flex-direction: column;
+  background: #242424;
+  color: white;
+  padding: 45px;
+}
+
+footer a {
+  color: white;
+}
+
+footer p {
+  text-align: center;
+}
+
+.contact a {
+  text-decoration: underline;
+}
+
+.address {
+  color: #969696;
+}
+
+.media {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  flex: 0 0 30%;
+  padding-top: 30px;
+}
+
+.media li {
+  display: none;
+}
+
+.media a {
+  padding: 10px;
+}
+
+.media ul li:active {
+  color: white;
+}
+
+@media screen and (min-width: 1240px) {
+  header {
+    flex: 1 0 100%;
+  }
+  .logo {
+    flex: 1 0 25%;
+    order: 1;
+  }
+
+  .nav {
+    flex: 1 0 50%;
+    order: 2;
+  }
+
+  .cart {
+    margin: auto;
+    flex: 1 0 25%;
+    order: 3;
+  }
+
+  .banner h1 {
+    font-size: 4rem;
+  }
+
+  .banner p {
+    font-size: 32;
+  }
+
+  .hand {
+    font-size: 40px;
+  }
+
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+    padding-bottom: 10%;
+  }
+
+  .trends,
+  .glasses,
+  .sale,
+  .bags {
+    flex: 1 0 25%;
+    padding-bottom: 10%;
+  }
+
+  .box-text {
+    top: 68px;
+  }
+
+  footer {
+    flex-flow: row;
+  }
+
+  footer p {
+    text-align: left;
+  }
+
+  .contact {
+    flex: 1 0 50%;
+    justify-content: center;
+    text-align: left;
+  }
+
+  .social {
+    flex: 1 0 75%;
+    text-align: center;
+  }
+
+  .media {
+    display: inline-block;
+    text-align: justify;
+  }
+
+  .media li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .media a i {
+    width: 30px;
+  }
+}
+@media screen and (min-width: 600px) {
+  body {
+    margin: auto;
+  }
+
+  h1,
+  h2,
+  h3,
+  p {
+    align-self: center;
+  }
+
+  header {
+    flex-wrap: wrap;
+  }
+
+  .logo,
+  .cart {
+    flex: 0 0 25%;
+  }
+
+  .cart {
+    order: 2;
+  }
+
+  nav {
+    border: none;
+    flex: 0 0 50%;
+  }
+
+  .hand {
+    font-size: 40px;
+  }
+
+  .mens,
+  .womens {
+    flex: 1 0 50%;
+    padding-bottom: 10%;
+  }
+
+  .trends,
+  .glasses,
+  .sale,
+  .bags {
+    flex: 1 0 25%;
+    padding-bottom: 10%;
+  }
+
+  footer {
+    flex-flow: row;
+  }
+
+  footer p {
+    text-align: left;
+  }
+
+  .contact {
+    flex: 1 0 50%;
+    justify-content: center;
+    text-align: left;
+    padding-top: 4%;
+  }
+
+  .social {
+    flex: 1 0 75%;
+    text-align: center;
+  }
+
+  .media {
+    display: inline-block;
+    text-align: justify;
+  }
+
+  .media li {
+    display: inline-block;
+    padding: 5px;
+  }
+
+  .media a i {
+    width: 30px;
+  }
+}
