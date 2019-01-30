@@ -61,6 +61,10 @@ body {
   z-index: 100000; /* above all content */
 }
 
+#main[tabindex="-1"]:focus {
+  outline: 0;
+}
+
 em {
   font-style: italic;
 }
@@ -89,7 +93,7 @@ h3 {
 }
 
 a {
-  color: #e2574c;
+  color: #db3a26;
   text-decoration: none;
 }
 a:hover {
@@ -281,28 +285,28 @@ nav {
   font-size: 30px;
 }
 
-.carosel-header {
+.carousel-header {
   padding-top: 65px;
   text-align: center;
   font-size: 37px;
 }
 
-.carosel {
+.carousel {
   padding-top: 40px;
   padding-bottom: 65px;
   margin-bottom: 40px;
 }
 
-.caroselitem span,
+.carouselitem span,
 h3 {
   display: block;
   text-align: center;
 }
 
-.carosel h3 {
+.carousel h3 {
   color: #e2574c;
 }
-.carosel span {
+.carousel span {
   color: #969696;
 }
 

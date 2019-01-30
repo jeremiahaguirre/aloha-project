@@ -3,30 +3,43 @@
 
 */
 $(function() {
-function validateEmail(email) {
-  var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-  return re.test(email);
-}
+  $(function() {
+    $("a[href^='#']")
+      .not("a[href='#']")
+      .click(function() {
+        $(
+          "#" +
+            $(this)
+              .attr("href")
+              .slice(1) +
+            ""
+        ).focus();
+      });
+  });
 
-function validate() {
-  var $result = $(".botton");
-  var email = $(".email").val();
-
-  if (validateEmail(email)) {
-    alert("You have subcribed");
-  } else {
-    alert("Email is not valid ");
+  function validateEmail(email) {
+    var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    return re.test(email);
   }
-  return false;
-}
 
-$(".botton").bind("click", validate);
+  function validate() {
+    var $result = $(".botton");
+    var email = $(".email").val();
 
-/* Smooth scrolling
+    if (validateEmail(email)) {
+      alert("You have subcribed");
+    } else {
+      alert("Email is not valid ");
+    }
+    return false;
+  }
+
+  $(".botton").bind("click", validate);
+
+  /* Smooth scrolling
 @source https://css-tricks.com/smooth-scrolling-accessibility/
 
 */
-
 
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (
@@ -48,16 +61,15 @@ $(".botton").bind("click", validate);
     }
   });
 
+  //Flickity PlugIn
 
-//Flickity PlugIn
-
-$(".carosel").flickity({
-  // options
-  cellAlign: "left",
-  contain: true,
-  autoPlay: true,
-  prevNextButtons: false,
-  imagesLoaded: true,
-  percentPosition: false
-});
+  $(".carousel").flickity({
+    // options
+    cellAlign: "left",
+    contain: true,
+    autoPlay: true,
+    prevNextButtons: false,
+    imagesLoaded: true,
+    percentPosition: false
+  });
 });
