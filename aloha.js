@@ -2,7 +2,7 @@
 @source https://stackoverflow.com/questions/46155/how-to-validate-an-email-address-in-javascript
 
 */
-
+$(function() {
 function validateEmail(email) {
   var re = /^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
   return re.test(email);
@@ -27,7 +27,7 @@ $(".botton").bind("click", validate);
 
 */
 
-$(function() {
+
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (
       location.pathname.replace(/^\//, "") ==
@@ -47,7 +47,7 @@ $(function() {
       }
     }
   });
-});
+
 
 //Flickity PlugIn
 
@@ -59,4 +59,5 @@ $(".carosel").flickity({
   prevNextButtons: false,
   imagesLoaded: true,
   percentPosition: false
+});
 });
