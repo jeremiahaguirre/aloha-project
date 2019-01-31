@@ -1,13 +1,13 @@
 /*All the fonts*/
 @font-face {
   font-family: "Playfair Display-Regular";
-  src: url("../fonts/PlayfairDisplay-Regular.eot");
-  src: url("../fonts/PlayfairDisplay-Regular.eot?#iefix")
+  src: url("../../fonts/PlayfairDisplay-Regular.eot");
+  src: url("../../fonts/PlayfairDisplay-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
-    url("../fonts/PlayfairDisplay-Regular.woff") format("woff"),
-    url("../fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
-    url("../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
+    url("../../fonts/PlayfairDisplay-Regular.woff2") format("woff2"),
+    url("../../fonts/PlayfairDisplay-Regular.woff") format("woff"),
+    url("../../fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+    url("../../fonts/PlayfairDisplay-Regular.svg#PlayfairDisplay-Regular")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -15,24 +15,24 @@
 
 @font-face {
   font-family: "Raleway-Light";
-  src: url("../fonts/Raleway-Light.eot");
-  src: url("../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Raleway-Light.woff2") format("woff2"),
-    url("../fonts/Raleway-Light.woff") format("woff"),
-    url("../fonts/Raleway-Light.ttf") format("truetype"),
-    url("../fonts/Raleway-Light.svg#Raleway-Light") format("svg");
+  src: url("../../fonts/Raleway-Light.eot");
+  src: url("../../fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Raleway-Light.woff2") format("woff2"),
+    url("../../fonts/Raleway-Light.woff") format("woff"),
+    url("../../fonts/Raleway-Light.ttf") format("truetype"),
+    url("../../fonts/Raleway-Light.svg#Raleway-Light") format("svg");
   font-weight: 300;
   font-style: normal;
 }
 
 @font-face {
   font-family: "Raleway-Medium";
-  src: url("../fonts/Raleway-Medium.eot");
-  src: url("../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
-    url("../fonts/Raleway-Medium.woff2") format("woff2"),
-    url("../fonts/Raleway-Medium.woff") format("woff"),
-    url("../fonts/Raleway-Medium.ttf") format("truetype"),
-    url("../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
+  src: url("../../fonts/Raleway-Medium.eot");
+  src: url("../../fonts/Raleway-Medium.eot?#iefix") format("embedded-opentype"),
+    url("../../fonts/Raleway-Medium.woff2") format("woff2"),
+    url("../../fonts/Raleway-Medium.woff") format("woff"),
+    url("../../fonts/Raleway-Medium.ttf") format("truetype"),
+    url("../../fonts/Raleway-Medium.svg#Raleway-Medium") format("svg");
   font-weight: 500;
   font-style: normal;
 }
@@ -107,6 +107,14 @@ header {
   flex-wrap: wrap;
   align-items: center;
   text-align: center;
+  overflow: hidden;
+  background-color: white;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10;
+  border: 1px solid rgba(0, 0, 0, 0.2);
 }
 .logo {
   flex: 0 0 50%;
@@ -145,18 +153,24 @@ nav {
   font-weight: bold;
   padding: 10px;
 }
+/* .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+} */
 
 /*Banner*/
 
 .banner {
   color: white;
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url(../images/banner-girl.png) center top 50px no-repeat,
-    url(../images/flower-bkgd.jpg);
+    url(../../images/banner-girl.png) center top 50px no-repeat,
+    url(../../images/flower-bkgd.jpg);
   background-size: auto, auto 559px, auto;
   margin: 1px auto;
   display: flex;
   align-items: center;
+  margin-top: 45%;
 }
 
 .banner-text {
@@ -206,7 +220,7 @@ nav {
   padding-bottom: 25%;
   text-align: center;
   position: relative;
-  background: url(../images/mens-category.jpg) center center no-repeat;
+  background: url(../../images/mens-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 100%;
@@ -219,7 +233,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(../images/trends-category.jpg) center center no-repeat;
+  background: url(../../images/trends-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -231,7 +245,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(../images/glasses-category.jpg) center center no-repeat;
+  background: url(../../images/glasses-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -243,7 +257,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(../images/sale-category.jpg) center center no-repeat;
+  background: url(../../images/sale-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -255,7 +269,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(../images/bags-category.jpg) center center no-repeat;
+  background: url(../../images/bags-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 50%;
@@ -267,7 +281,7 @@ nav {
   padding-bottom: 25%;
   position: relative;
   text-align: center;
-  background: url(../images/womens-category.jpg) center center no-repeat;
+  background: url(../../images/womens-category.jpg) center center no-repeat;
   background-size: cover, contain;
   overflow: hidden;
   flex: 1 0 100%;
@@ -327,7 +341,7 @@ h3 {
   color: white;
   text-align: center;
   background: linear-gradient(rgba(0, 0, 0, 0.15), rgba(0, 0, 0, 0.15)),
-    url(../images/wave-bkgd.jpg) no-repeat;
+    url(../../images/wave-bkgd.jpg) no-repeat;
   background-position: bottom;
   margin-bottom: 11px;
   padding-top: 54px;
@@ -418,7 +432,6 @@ footer p {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
-  flex: 0 0 30%;
   padding-top: 30px;
 }
 
@@ -452,6 +465,10 @@ footer p {
     margin: auto;
     flex: 1 0 25%;
     order: 3;
+  }
+
+  .banner {
+    margin-top: 15%;
   }
 
   .banner h1 {
@@ -500,7 +517,7 @@ footer p {
   }
 
   .social {
-    flex: 1 0 75%;
+    flex: 1 0 50%;
     text-align: center;
   }
 
@@ -548,6 +565,10 @@ footer p {
     flex: 0 0 50%;
   }
 
+  .banner {
+    margin-top: 160px;
+  }
+
   .hand {
     font-size: 40px;
   }
@@ -582,7 +603,7 @@ footer p {
   }
 
   .social {
-    flex: 1 0 75%;
+    flex: 1 0 50%;
     text-align: center;
   }
 

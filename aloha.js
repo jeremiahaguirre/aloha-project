@@ -3,6 +3,9 @@
 
 */
 $(function() {
+  // $("html").on("scroll", function() {
+  //   $("#nav-bar").addClass("sticky");
+  // });
   $(function() {
     $("a[href^='#']")
       .not("a[href='#']")
@@ -43,16 +46,16 @@ $(function() {
 
   $('a[href*="#"]:not([href="#"])').click(function() {
     if (
-      location.pathname.replace(/^\//, "") ==
+      location.pathname.replace(/^\//, "") ===
         this.pathname.replace(/^\//, "") &&
-      location.hostname == this.hostname
+      location.hostname === this.hostname
     ) {
       var target = $(this.hash);
       target = target.length ? target : $("[name=" + this.hash.slice(1) + "]");
       if (target.length) {
         $("html, body").animate(
           {
-            scrollTop: target.offset().top
+            scrollTop: target.offset().top-160
           },
           1600
         );
