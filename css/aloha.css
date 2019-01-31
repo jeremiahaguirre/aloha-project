@@ -113,10 +113,20 @@ header {
   order: 1;
 }
 
+.logo img {
+  width: 150px;
+  height: 160px;
+}
+
 .cart {
   margin: auto;
   flex: 0 0 50%;
   order: 1;
+}
+
+.cart img {
+  width: 55px;
+  height: 55px;
 }
 
 /*Navigation Bar*/
@@ -332,6 +342,11 @@ h3 {
   font-size: 16px;
   line-height: 24px;
   margin: 10px 0;
+}
+
+form {
+  width: 100px;
+  height: 200px;
 }
 
 .input {
