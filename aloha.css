@@ -115,6 +115,7 @@ header {
   width: 100%;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.2);
+  height: 200px;
 }
 .logo {
   flex: 0 0 50%;
@@ -170,7 +171,7 @@ nav {
   margin: 1px auto;
   display: flex;
   align-items: center;
-  margin-top: 45%;
+  margin-top: 200px;
 }
 
 .banner-text {
@@ -450,6 +451,7 @@ footer p {
 @media screen and (min-width: 1240px) {
   header {
     flex: 1 0 100%;
+    height: 90px;
   }
   .logo {
     flex: 1 0 25%;
@@ -468,7 +470,7 @@ footer p {
   }
 
   .banner {
-    margin-top: 15%;
+    margin-top: 89px;
   }
 
   .banner h1 {
@@ -549,6 +551,7 @@ footer p {
 
   header {
     flex-wrap: wrap;
+    height: 90px;
   }
 
   .logo,
@@ -566,7 +569,7 @@ footer p {
   }
 
   .banner {
-    margin-top: 160px;
+    margin-top: 89px;
   }
 
   .hand {
