@@ -84,6 +84,7 @@ h1,
 h2,
 h3 {
   font-family: "Playfair Display-Regular";
+  text-shadow: 2px 2px grey;
 }
 
 .container {
@@ -164,6 +165,7 @@ nav {
 
 .banner {
   color: white;
+
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../../images/banner-girl.png) center top 50px no-repeat,
     url(../../images/flower-bkgd.jpg);
@@ -187,6 +189,7 @@ nav {
 
 .banner h1 {
   font-size: 3rem;
+  text-shadow: 2px 2px grey;
 }
 
 .banner p {
@@ -214,6 +217,7 @@ nav {
   color: white;
   font-family: "Raleway-Medium";
   text-align: center;
+  text-shadow: 2px 2px grey;
 }
 
 .mens {
@@ -355,7 +359,8 @@ h3 {
 
 .updates p {
   font-size: 16px;
-  line-height: 24px;
+  line-height: 53px;
+  font-weight: bold;
   margin: 10px 0;
 }
 
@@ -396,6 +401,8 @@ button:active {
 }
 
 .botton {
+  font-weight: bold;
+  color: white;
   border-radius: 15px;
   margin: 4px;
   width: 100px;
