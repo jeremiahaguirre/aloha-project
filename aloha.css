@@ -334,6 +334,7 @@ h3 {
 
 .carousel h3 {
   color: #e2574c;
+  text-shadow: unset;
 }
 .carousel span {
   color: #969696;
