@@ -6,7 +6,8 @@ const gulp = require("gulp"),
   streamqueue = require("streamqueue"),
   plumber = require("gulp-plumber"),
   notify = require("gulp-notify"),
-  browserSync = require("browser-sync").create();
+  browserSync = require("browser-sync").create(),
+  csslint = require("gulp-csslint");
 
 let plumberErrorHandler = {
   errorHandler: notify.onError({
@@ -22,7 +23,6 @@ gulp.task("scripts", function() {
     gulp.src("flickity.pkgd.min.js"),
     gulp.src("aloha.js")
   )
-    .pipe(plumber(plumberErrorHandler))
     .pipe(concat("all.js"))
     .pipe(terser()) // Call the terser function on these files
     .pipe(rename({ extname: ".min.js" })) // Rename the uglified file
@@ -38,6 +38,8 @@ gulp.task("css", function() {
   )
     .pipe(plumber(plumberErrorHandler))
     .pipe(concat("all.css"))
+    .pipe(csslint())
+    .pipe(csslint.formatter("fail"))
     .pipe(uglifycss()) // Call the  function on these files
     .pipe(rename({ extname: ".min.css" })) // Rename the uglified file
     .pipe(gulp.dest("./build/css")); // Where do we put the result?
