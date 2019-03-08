@@ -116,7 +116,7 @@ header {
   width: 100%;
   z-index: 10;
   border: 1px solid rgba(0, 0, 0, 0.2);
-  height: 200px;
+  
 }
 .logo {
   flex: 0 0 50%;
@@ -125,7 +125,6 @@ header {
 
 .logo img {
   width: 150px;
-  height: 160px;
 }
 
 .cart {
@@ -136,7 +135,6 @@ header {
 
 .cart img {
   width: 55px;
-  height: 55px;
 }
 
 /*Navigation Bar*/
@@ -155,17 +153,11 @@ nav {
   font-weight: bold;
   padding: 10px;
 }
-/* .sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-} */
 
 /*Banner*/
 
 .banner {
   color: white;
-
   background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
     url(../../images/banner-girl.png) center top 50px no-repeat,
     url(../../images/flower-bkgd.jpg);
@@ -173,7 +165,7 @@ nav {
   margin: 1px auto;
   display: flex;
   align-items: center;
-  margin-top: 200px;
+  margin-top:100px;
 }
 
 .banner-text {
